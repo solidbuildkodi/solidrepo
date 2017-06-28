@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	<addon id="plugin.program.SolidUpdater" name="Solid Updater" version="2017.02.20" BAWversion="2017.02.20" provider-name="SolidBuildKodi">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.addon.common" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en">SolidBuildKodi's Wizard</description>
+		<platform>all</platform>
+	</extension>
+	</addon>
+	<addon id="script.retropie" name="RetroPie" version="1.0.0" provider-name="Smithers">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">RetroPie</summary>
+		<description lang="en">Addon that launches RetroPie in a Dual-Boot setup</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>wwww.multibootpi.com</forum>
+		<source></source>
+		<email></email>
+	</extension>
+	</addon>
+	<addon id="resource.uisounds.solid" name="Solid UI Sounds" version="2.0" provider-name="SolidBuildKodi">
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.resource.uisounds"/>
+	<extension point="kodi.addon.metadata">
+		<language>en</language>
+		<platform>all</platform>
+		<summary>Solid UI Sounds</summary>
+		<description></description>
+		<disclaimer>UI Sounds to go along with the Solid Build</disclaimer>
+	</extension>
+	</addon>
+	<addon id="repository.solidbuild" name="Solid Build repository" version="1.0.1" provider-name="Solid">
+	<extension point="xbmc.addon.repository" name="Solid Build repository">
+	<dir>
+		<info compressed="false">http://djstymie.steropes.feralhosting.com/kodi/repo-solid/addons.xml</info>
+		<checksum>http://djstymie.steropes.feralhosting.com/kodi/repo-solid/addons.xml.md5</checksum>
+		<datadir zip="true">http://djstymie.steropes.feralhosting.com/kodi/repo-solid/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Solid Build repository</summary>
+		<description lang="en">Solid Build repository</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+	</extension>
+	</addon>
+</addons>
